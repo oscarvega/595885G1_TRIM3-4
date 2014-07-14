@@ -17,6 +17,9 @@ tipo_documento varchar(20) not null,
 numero_documento varchar(20) not null,
 primary key (matricula),
 constraint FK_persona foreign key (tipo_documento,numero_documento)references a.persona(tipo_documento,numero_documento)
+on update cascade
+on delete cascade
+
 );
 
 INSERT INTO `a`.`persona`
@@ -40,6 +43,14 @@ VALUES
 '2005',
 'cc',
 '801234234');
+
+UPDATE `a`.`persona`
+SET
+`numero_documento` = '80013833'
+WHERE `tipo_documento` = 'cc' AND `numero_documento` = '801234234';
+
+DELETE FROM `a`.`persona`
+WHERE tipo_documento='cc' and numero_documento='80013833';
 
 
 
