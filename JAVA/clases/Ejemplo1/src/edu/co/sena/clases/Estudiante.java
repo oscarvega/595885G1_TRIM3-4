@@ -10,18 +10,23 @@ package edu.co.sena.clases;
  *
  * @author Enrique Moreno
  */
-public class Estudiante {
+ public class Estudiante {
     String tipoDocumento; // visibilidad paquete
     String numeroDocumento; //visibilidad paquete
     protected String edad; // visibilidad protegida
     public String sexo; //visibilidad publica
-    private String nombres; // visiblidad privada
+    private String nombres = "sdagdafg"; // visiblidad privada
     public String apellidos;
+    private Monitor monitor; //refencias a una clase
     
     
     public void modificarTipoDocumento(String documento){
     this.numeroDocumento= documento;
+    int a;
     }
+    
+    
+    
     
     
 }

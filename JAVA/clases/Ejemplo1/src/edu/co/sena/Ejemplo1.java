@@ -21,6 +21,8 @@ public class Ejemplo1 {
         // TODO code application logic 
         Estudiante es= new Estudiante();
         
+        System.out.println("");
+        
         
     }
     
