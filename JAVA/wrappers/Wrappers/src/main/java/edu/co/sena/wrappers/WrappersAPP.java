@@ -21,10 +21,15 @@ public class WrappersAPP {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        String lecturaa= JOptionPane.showInputDialog("digite el numero");
-        String lecturab= JOptionPane.showInputDialog("digite el numero");
-        int resultado=Integer.parseInt( lecturaa)+Integer.parseInt(lecturab);
-        JOptionPane.showMessageDialog(null, resultado);
+        int a=5;
+        Integer aWrapper = a;
+        String aString = "10";
+        a= (int)Integer.parseInt(aString);
+        
+//        String lecturaa= JOptionPane.showInputDialog("digite el numero");
+//        String lecturab= JOptionPane.showInputDialog("digite el numero");
+//        int resultado=Integer.parseInt( lecturaa)+Integer.parseInt(lecturab);
+        JOptionPane.showMessageDialog(null, a);
         
     }
     
