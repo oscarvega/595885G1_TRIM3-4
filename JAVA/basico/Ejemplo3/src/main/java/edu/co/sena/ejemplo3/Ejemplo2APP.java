@@ -34,11 +34,12 @@ public class Ejemplo2APP {
             opcion =Integer.parseInt(JOptionPane.showInputDialog(null,mensajeMenu,"MENU",3));
             switch(opcion){
                 case 1: {
-                
+                    double lado;
+                    lado= (double)Double.parseDouble(JOptionPane.showInputDialog("digite el valor del lado"));
+                    JOptionPane.showMessageDialog(null, "el area del cuadrado es: "+lado*lado);
                     break;
                 }
                 case 2:{
-                
                 }
                 case 7:{
                     JOptionPane.showMessageDialog(null, "gracias por usar la aplicacion");
@@ -47,13 +48,7 @@ public class Ejemplo2APP {
                 default:{
                 JOptionPane.showMessageDialog(null, "la ocpion selecionada no existe");
                 }
-            
-            
             }
-            
-            
         } while (opcion!=7);
-        
     }
-    
 }
