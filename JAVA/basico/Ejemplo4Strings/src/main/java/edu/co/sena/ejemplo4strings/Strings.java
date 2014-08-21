@@ -28,13 +28,24 @@ public class Strings {
 //        JOptionPane.showMessageDialog(null, texto.toUpperCase(), "mayusculas", 3);
 //        
         
-        String numeros = JOptionPane.showInputDialog("escriba texto");
-        String numerosComoArray[] = numeros.split(" ");
-        for (int i = 0; i < numerosComoArray.length; i++) {
-            JOptionPane.showMessageDialog(null, numerosComoArray[i],"palabra numero "+(i+1),3 );
-            //System.out.println(numerosComoArray[i]);
-        }
+//        String numeros = JOptionPane.showInputDialog("escriba texto");
+//        String numerosComoArray[] = numeros.split(" ");
+//        for (int i = 0; i < numerosComoArray.length; i++) {
+//            JOptionPane.showMessageDialog(null, numerosComoArray[i],"palabra numero "+(i+1),3 );
+//            //System.out.println(numerosComoArray[i]);
+//        }
        
+        int a=5;
+        int b=9;
+        if (a==b){
+            System.out.println("son iguales");
+        }else{
+            System.out.println("son diferente");
+        
+        }
+        int c=(a==b)?a+1:b;
+        System.out.println(c);
+        
         
         
         

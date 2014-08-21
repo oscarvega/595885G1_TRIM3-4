@@ -29,6 +29,12 @@ public class NewMain {
         System.out.println(c1.getVelocidad());
                 
         System.out.println(Math.PI);
+        CarroGas c2= new CarroGas(null, null, null, null);
+        
+        if(c2 instanceof Carro){
+            System.out.println("el objeto es una instancia de carro");
+        }else{
+        }
                 
         
         
