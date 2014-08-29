@@ -26,7 +26,7 @@ public class PolimorfismoApp {
         carrito1.setModelo("2000");
         
         System.out.println(carrito1.getClass().getCanonicalName());
-        
+        int a[] = new int[10];
     }
     
     public static void algo(){
