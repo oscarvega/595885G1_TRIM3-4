@@ -15,16 +15,22 @@ import java.util.Collections;
 public class A {
     
     private B b[];
-    public int numObjetos=0;
+    private int numObjetos=0;
     
-    public A() {
-        this.b= new B[10];
     
-    }
-    
-    public static void agregarObjeto(B objetoAgregar){
+    public A(int tamanoArreglo) {
+        this.b= new B[tamanoArreglo];
     
     }
+    
+    public void agregarObjeto(B objetoAgregar){
+     this.b[numObjetos]= objetoAgregar;
+     numObjetos++;
+    }
+    
+    
+    
+    
     
     
     

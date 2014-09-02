@@ -40,7 +40,7 @@ public class Carro {
     }
 
     public boolean adicionarPersona(Persona e) {
-        if (buscarPasajero(e) != -1) {
+        if (buscarPasajero(e) != -1 || contadorPasajeros==cantidadPasajeros) {
             return false;
         }
         pasajeros[contadorPasajeros] = e;

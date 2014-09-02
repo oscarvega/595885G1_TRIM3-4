@@ -28,8 +28,11 @@ public class APP {
         carro1.adicionarPersona(p2);
         carro1.adicionarPersona(p3);
         carro1.adicionarPersona(p4);
+        carro1.adicionarPersona(p5);
+        carro1.adicionarPersona(p4);
         
-        //carro1.listarPasajeros();
+        System.out.println(carro1.getContadorPasajeros());
+        carro1.listarPasajeros();
         
         if (carro1.removerPasajero(p1)) {
             System.out.println("se pudo eliminar");
