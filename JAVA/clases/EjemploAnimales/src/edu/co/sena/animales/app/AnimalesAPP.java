@@ -10,6 +10,7 @@ import edu.co.sena.animales.modelo.Cocodrilo;
 import edu.co.sena.animales.modelo.CocodriloHembra;
 import edu.co.sena.animales.modelo.Perro;
 import edu.co.sena.animales.modelo.*;
+import java.math.MathContext;
 
 /**
  *
@@ -22,6 +23,7 @@ public class AnimalesAPP {
      */
     public static void main(String[] args) {
         Perro p1 = new PerroHembra();
+        System.out.println(p1.getClass().getName());
         p1.comer();
         p1.desplazarse();
         p1.morir();
